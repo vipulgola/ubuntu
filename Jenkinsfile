@@ -8,7 +8,7 @@ pipeline{
         }
         stage('Build stage'){
             steps{
-                sh 'docker build -t="vipulgola/ubuntu" ubuntu/'
+                sh 'docker build -t="vipulgola/ubuntu" .'
             }
         }
         stage('package'){
