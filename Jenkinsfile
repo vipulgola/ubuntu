@@ -3,12 +3,12 @@ pipeline{
     stages{
         stage('Clean stage'){
             steps{
-                sh 'sudo docker pull dockerfile/ubuntu'
+                sh 'sudo docker pull ubuntu'
             }
         }
         stage('Build stage'){
             steps{
-                sh 'docker build -t="vipulgola/ubuntu" github.com/dockerfile/ubuntu'
+                sh 'docker build -t="vipulgola/ubuntu" ubuntu/'
             }
         }
         stage('package'){
